@@ -1,0 +1,99 @@
+.MainImage {
+position: absolute;
+width: 1440px;
+height: 440px;
+left: 0px;
+top: 229px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(mainpagebackground.jpg);
+}
+    
+.MainImageText1 {
+font-family: Roboto, sans-serif;
+font-weight: 100;
+font-size: 55px;
+line-height: 64.45px;
+text-align: center;
+color: #FFFFFF;
+    
+position: relative;
+top: 146px;
+}
+
+.MainImageText2 {
+@extend .MainImageText1;
+font-weight: 300;
+font-size: 30px;
+line-height: 35.16px;
+top: 166px;
+}
+
+.WhatsHot {
+position: absolute;
+top: 755px;
+width: 100%;
+text-align: center;
+}
+
+.WhatsHotText {
+font-family: Roboto, sans-serif;
+font-style: normal;
+
+color: #000000;
+}
+
+.WhatsHotText1 {
+font-weight: 200;
+font-size: 50px;
+line-height: 59px;
+display: inline;
+padding: none;
+margin: none;
+}
+
+.WhatsHotText2 {
+@extend .WhatsHotText1;
+font-weight: bold;
+color: #F85B77;
+}
+
+.WhatsHotText3 {
+font-weight: 200;
+font-size: 25px;
+line-height: 29px;
+margin-top: 25px;
+}
+
+@mixin ImageBox($left-size){
+position: absolute;
+width: 250px;
+height: 340px;
+background: gray;
+top: 135px;
+left: $left-size;
+}
+
+.WhatsHotImage1 {@include ImageBox(160px);}
+.WhatsHotImage2 {@include ImageBox(450px);}
+.WhatsHotImage3 {@include ImageBox(740px);}
+.WhatsHotImage4 {@include ImageBox(1030px);}
+
+.OnSale {@extend .WhatsHot;top:1405px;}
+.OnSaleText {@extend .WhatsHotText;}
+.OnSaleText1 {@extend .WhatsHotText1;}
+.OnSaleText2 {@extend .WhatsHotText2;color: #1360D5;}
+.OnSaleText3 {@extend .WhatsHotText3;}
+.OnSaleImage1 {@include ImageBox(160px);}
+.OnSaleImage2 {@include ImageBox(450px);}
+.OnSaleImage3 {@include ImageBox(740px);}
+.OnSaleImage4 {@include ImageBox(1030px);}
+
+.OnFire {@extend .WhatsHot;top:2055px;bottom: 625px;}
+.OnFireText {@extend .WhatsHotText;}
+.OnFireText1 {@extend .WhatsHotText1;}
+.OnFireText2 {@extend .WhatsHotText2;color: #E11313;}
+.OnFireText3 {@extend .WhatsHotText3;}
+.OnFireImage1 {@include ImageBox(160px);}
+.OnFireImage2 {@include ImageBox(450px);}
+.OnFireImage3 {@include ImageBox(740px);}
+.OnFireImage4 {@include ImageBox(1030px);}

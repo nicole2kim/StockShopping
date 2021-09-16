@@ -1,0 +1,121 @@
+.Logo {
+position: relative;
+width: 190px;
+height: 70px;
+top: 30px;
+left: 40px;
+background-color: #000000;
+}
+
+.JoinImage {
+width: 30px;
+height: 32px;
+
+position: absolute;
+top: 44px;
+left: 1293px;
+}
+
+.JoinText {
+font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 14px;
+margin: 0 auto;
+padding: none;
+
+position: absolute;
+top: 80px;
+left: 1294px;
+
+}
+
+.LogInImage {
+@extend .JoinImage;
+left: 1353px;
+}
+
+.LogInText {
+@extend .JoinText;
+left: 1350px;
+}
+
+.NavComponents {
+position: relative;
+font-family: Roboto, sans-serif;
+font-style: normal;
+font-weight: bold;
+padding: 0;
+margin: 0 auto;
+
+font-size: 17px;
+line-height: 20px;
+width: 1361px;
+height: 60px;
+top: 60px;
+left: 0px;
+
+
+background: #FFFFFF;
+border: 2px solid #000000;
+color: #000000;
+}
+
+.NavAboutUs {
+position: absolute;
+left: 9.55%;
+right: 83.84%;
+top:20px;
+}
+
+.NavStocks {
+@extend .NavAboutUs;
+left: 28.66%;
+
+
+}
+
+.NavPortfolio {
+@extend .NavAboutUs;
+left: 46.8%;
+}
+
+.NavTrending {
+@extend .NavAboutUs;
+left: 65.39%;
+}
+
+.NavSearchBar {
+position: absolute;
+left: 80.09%;
+right: 5.95%;
+top:20px;
+
+border: none;
+border-bottom: 3px solid #000000;
+}
+
+.NavSearchIcon1 {
+position: absolute;
+left: 94.34%;
+right: 4.7%;
+top: 19px;
+width:13px;
+height: 13px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 6.5px;
+box-sizing: border-box;
+}
+
+.NavSearchIcon2 {
+position: absolute;
+right: 60px;
+top: 32px;
+width:9.22px;
+
+border-bottom: 2px solid #000000;
+transform: rotate(49.4deg);
+}
