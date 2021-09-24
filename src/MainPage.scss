@@ -5,7 +5,7 @@ height: 440px;
 left: 0px;
 top: 229px;
 
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(mainpagebackground.jpg);
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(img/mainpagebackground.jpg);
 }
     
 .MainImageText1 {
@@ -97,3 +97,10 @@ left: $left-size;
 .OnFireImage2 {@include ImageBox(450px);}
 .OnFireImage3 {@include ImageBox(740px);}
 .OnFireImage4 {@include ImageBox(1030px);}
+
+.BlankMainPage {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    top: 2530px;
+    }
