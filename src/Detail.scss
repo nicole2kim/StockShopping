@@ -76,7 +76,7 @@ top: 267px;
 .CompanyReview {
 position: absolute;
 width: 741px;
-height: 382px;
+height: 423px;
 left: 101px;
 top: 573px;
 
@@ -184,11 +184,29 @@ border-radius: 5px
 .CompanyReview진입가능성Circle5 {@include CompanyReviewCircle(199px);}
 .CompanyReview진입가능성Circle6 {@include CompanyReviewCircle(248px);}
 
+.CompanyReviewSubmit {
+position: absolute;
+width: 50px;
+height: 25px;
+left: 279px;
+top: 381px;
+
+background: #082263;
+border-radius: 10px;
+
+font-weight: bold;
+font-size: 10px;
+line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
 
 .CompanyReviewLine {
 position: absolute;
 width: 0px;
-height: 270px;
+height: 325.5px;
 left: 354.5px;
 top: 78.5px;
     
@@ -261,19 +279,10 @@ top: 20px;
 
 border: 2px solid #C4C4C4;
 border-radius: 7px;
-}
-
-.InputReviewCheck {
-position: absolute;
-width: 25px;
-height: 26px;
-left: 305px;
-top: 24px;
 
 font-size: 17px;
-line-height: 20px;
-display: flex;
-align-items: center;
+line-height: 30px;
+text-align: center;
 
 color: #000000;
 }
@@ -335,7 +344,7 @@ top: 48px;
 border: 0.5px solid #000000;
 }
 
-.StockBorderLine2 {@extend .StockBorderLine1;top: 249px;}
+.StockBorderLine2 {@extend .StockBorderLine1;top: 248px;}
 
 @mixin StockLine($top){
 position: absolute;
@@ -402,7 +411,64 @@ text-align: center;
 color: #706F6F;
 }
 
+@mixin infotext($left,$top){
+position: absolute;
+left: $left;
+top: $top;
 
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+}
+
+@mixin infonumber($right,$top){
+position: absolute;
+right: $right;
+top: $top;
+
+font-size: 15px;
+line-height: 18px;
+font-weight: 500;
+color: #706F6F;
+}
+
+.전일비Text1 {@include infotext(601px, 74px);}
+.전일비Number1 {@include infonumber(346px, 74px);}
+
+.전일비Text2 {@include infotext(601px, 121px)}
+.전일비Number2 {@include infonumber(346px, 121px);}
+
+.전일비Text3 {@include infotext(601px, 171px)}
+.전일비Number3 {@include infonumber(346px, 171px);}
+
+.등락률Text {@include infotext(911px, 74px)}
+.등락률Number {@include infonumber(36px, 74px);}
+
+.시가Text {@include infotext(911px, 121px)}
+.시가Number {@include infonumber(36px, 121px);}
+
+.저가Text {@include infotext(911px, 171px)}
+.저가Number {@include infonumber(36px, 171px);}
+
+.KOSPIText {
+position: absolute;
+width: 527px;
+height: 26px;
+left: 25px;
+top: 220px;
+
+font-size: 17px;
+line-height: 20px;
+
+color: #000000;
+}
+.KOSPIPrice {@include infonumber(813px, 222px);}
+.KOSPINumber {@include infonumber(649px, 222px);}
+
+.KOSDAQText {@extend .KOSPIText; left: 603px;}
+.KOSDAQPrice {@include infonumber(200px, 220px);}
+.KOSDAQNumber {@include infonumber(36px, 220px);}
 
 .BlankDetail {
 position: absolute;
